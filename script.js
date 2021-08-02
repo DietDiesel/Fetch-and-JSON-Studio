@@ -6,17 +6,16 @@ window.addEventListener("load", function() {
         response.json().then( function(json) {
             let i = 0;
             let j = 0;
-            for (i of json) {
+            for (i in json) {
                 for (j of json[i].skills) {
-                    rosterSkills += json[i].skills[j];
-                    rosterSkills += `<br>`;
+                    rosterSkills += j + '<br>';
                 }
                 roster += `
                 <div id="roster">
                     <div id="photoColumn">
-                        <div id="photo">src="${json[i].picture}></img></div>
-                        <div id="fancyName>${json[i].firstName}</div>
-                        <div id="fancyName>${json[i].lastName}</div>
+                        <img id="photo" src="${json[i].picture}">
+                        <div id="fancyName">${json[i].firstName}</div>
+                        <div id="fancyName">${json[i].lastName}</div>
                     </div>
                     <div id="textColumn">
                         <div id="plainTitle">First name:<div id="plainName">${json[i].firstName}</div></div>
