@@ -14,3 +14,70 @@
     margin-bottom: 20px;
     border-radius: 6px;
 }
+
+h1 {
+    font-family: 'Russo One', monospace;
+    text-align: center;
+}
+
+#roster{
+    display: flex;
+    width:500px;
+    border: 1px solid black;
+    border-radius: 5px 15px;
+    box-shadow: 5px 5px grey;
+    margin: 20px auto;
+}
+
+#photoColumn{
+    width: 150px;
+    margin: 10px;
+}
+
+#innerColumn{
+    display: flex;
+}
+
+#photo{
+    width: 150px;
+    border-radius: 5px 15px;
+    box-shadow: 5px 5px grey;
+}
+
+#fancyName{
+    font-family: 'Russo One', monospace;
+    font-size: x-large;
+    text-align: center;
+}
+
+#textColumn{
+    width: 350px;
+    margin: 10px;
+}
+
+#plainTitle{
+    text-transform: uppercase;
+    font-family: 'Russo One', monospace;
+    font-size: x-small;
+    border: 1px solid black;
+    border-radius: 5px 15px;
+    margin: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    flex-grow: 1;
+
+}
+
+#plainName{
+    font-family: 'Play', sans-serif;
+    line-height: initial;
+    text-transform: initial;
+    font-size: medium;
+}
+
+#plainText{
+    font-family: 'Play', sans-serif;
+    line-height: initial;
+    text-transform: initial;
+    font-size: medium;
+}
